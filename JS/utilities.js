@@ -11,3 +11,10 @@ function getTextFieldValueById(id){
 
     return textNumber;
 }
+
+function showSectionById(id){
+    document.getElementById('add-donation-form').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+}
