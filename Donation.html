@@ -27,7 +27,8 @@
                         clifford: '#da373d',
                         'btn-bg': 'rgb(171, 239, 95)',
                         'nav-bg': 'rgb(249, 247, 243)',
-                        
+                        'gray-bg': 'rgba(17, 17, 17, 0.7)',
+
                     },
                 },
             },
@@ -35,30 +36,130 @@
     </script>
 </head>
 
-<body>
+<body class="font-lexend">
     <!-- Nav  -->
-    <nav class="flex justify-around bg-nav-bg font-bold text-xl pt-5 pb-14">
+    <nav class="sticky top-0 flex justify-between md:justify-around bg-nav-bg font-bold text-xl pt-5 pb-14 px-5 md:px-0">
         <div>
-            <button class="btn px-8 text-xl font-bold bg-btn-bg">Blog</button>
+            <button class="btn px-8 text-xl text-black font-bold bg-btn-bg">Blog</button>
         </div>
 
         <div class="hidden md:flex md:gap-5">
             <img src="assets/logo.png" alt="">
-            <h1 class="pt-2.5">Donate Bangladesh</h1>
+            <h1 class="text-black pt-2.5">Donate Bangladesh</h1>
         </div>
 
         <div class="flex space-x-2">
             <img class="py-2" src="assets/coin.png" alt="">
-            <h1 class="pt-2.5">5500</h1>
-            <p class="pt-2.5">BDT</p>
+            <h1 id="input-cash-out" class="text-gray-bg pt-2.5">5500</h1>
+            <p class="text-gray-bg pt-2.5">BDT</p>
         </div>
     </nav>
-    
+
     <!-- Main  -->
-    <main></main>
+    <main class="static container mx-auto max-w-6xl pt-20 pb-10">
+        <!-- Donation button -->
+        <div class="flex justify-center gap-3 ">
+            <button class="btn px-8 bg-btn-bg font-bold text-base text-black">Donation</button>
+            <button class="btn px-8 border-stone-300 text-gray-bg bg-white font-bold text-base ">History</button>
+        </div>
+
+        <!-- Card section 1 -->
+        <div class="py-10 mx-5 md:mx-0">
+            <div class="card lg:card-side bg-base-100 border-2 border-solid">
+                <figure>
+                  <img class="p-7 md:pr-0"
+                    src="assets/noakhali.png"
+                    alt="Album" />
+                </figure>
+                <div class="card-body pt-0 md:pt-7 space-y-2">
+                  <!-- coin section  -->
+                  <div class="flex rounded-md space-x-2 px-3 bg-stone-100 w-28">
+                        <img class="py-2" src="assets/coin.png" alt="">
+                        <h1 id="account-balance" class="text-gray-bg pt-2.5">1000</h1>
+                        <p class="text-gray-bg pt-2.5">BDT</p>
+                  </div>
+
+                  <!-- title section  -->
+                  <h2 class="card-title text-black">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p class="text-gray-bg"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                   
+                  <!-- input section  -->
+                  <input id="input-add-money" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full h-14 "/>
+                  
+                  <!-- input btn  -->
+                  <button id="btn-add-money" class="btn bg-btn-bg btn-block font-bold text-base text-black h-14">Donate Now</button>
+                </div>
+              </div>
+        </div>
+
+        <!-- Card section 2 -->
+        <div class="mx-5 md:mx-0">
+            <div class="card lg:card-side bg-base-100 border-2 border-solid">
+                <figure>
+                  <img class="p-7 md:pr-0"
+                    src="assets/feni.png"
+                    alt="Album" />
+                </figure>
+
+                <div class="card-body pt-0 md:pt-7 md:pr-7 space-y-2">
+                  <!-- coin section  -->
+                  <div class="flex rounded-md space-x-2 px-3 bg-stone-100 w-32">
+                        <img class="py-2" src="assets/coin.png" alt="">
+                        <h1 class="text-gray-bg pt-2.5">600</h1>
+                        <p class="text-gray-bg pt-2.5">BDT</p>
+                  </div>
+
+                  <!-- title section  -->
+                  <h2 class="card-title text-black">Donate for Flood Relief in Feni,Bangladesh</h2>
+                  <p class="text-gray-bg">The recent floods in Feni have devastated local communities, leading <br> to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and help rebuild lives in the aftermath of this disaster.<br> Every contribution counts towards making a real difference. Please <br> consider donating today to assist those in urgent need.</p>
+                   
+                  <!-- input section  -->
+                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full h-14 "/>
+                  
+                  <!-- input btn  -->
+                  <button class="btn bg-btn-bg btn-block font-bold text-base text-black h-14">Donate Now</button>
+                </div>
+              </div>
+        </div>
+
+        <!-- Card section 3 -->
+        <div class="py-10 mx-5 md:mx-0">
+            <div class="card lg:card-side bg-base-100 border-2 border-solid">
+                <figure>
+                  <img class="p-7 md:pr-0"
+                    src="assets/quota-protest.png"
+                    alt="Album" />
+                </figure>
+                <div class="card-body pt-0 md:pt-7 space-y-2">
+                  <!-- coin section  -->
+                  <div class="flex rounded-md space-x-2 px-3 bg-stone-100 w-36">
+                        <img class="py-2" src="assets/coin.png" alt="">
+                        <h1 class="text-gray-bg pt-2.5">2400</h1>
+                        <p class="text-gray-bg pt-2.5">BDT</p>
+                  </div>
+
+                  <!-- title section  -->
+                  <h2 class="card-title text-black">Aid for Injured in the Quota Movement</h2>
+                  <p class="text-gray-bg">The recent Quota movement has resulted in numerous injuries and <br> significant hardship for many individuals. Your support is crucial in <br> providing medical assistance, rehabilitation, and necessary supplies <br> to those affected. By contributing, you help ensure that injured <br> individuals receive the care and support they need during this <br> challenging time. Every donation plays a vital role in alleviating their <br>suffering and aiding in their recovery. Please consider making a <br>donation to support these brave individuals in their time of need.</p>
+                   
+                  <!-- input section  -->
+                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full h-14 "/>
+                  
+                  <!-- input btn  -->
+                  <button class="btn bg-btn-bg btn-block font-bold text-base text-black h-14">Donate Now</button>
+                </div>
+              </div>
+        </div>
+    </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class="bg-nav-bg h-28"></div>
+    </footer>
+
+    <script src="JS/utilities.js"></script>
+    <script src="JS/cashOut.js"></script>
+    <script src="JS/addDonation.js"></script>
 </body>
 
 </html>
