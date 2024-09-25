@@ -28,7 +28,7 @@ document.getElementById('btn-add-money3')
         const div = document.createElement('div');
         div.classList.add();
         div.innerHTML = `
-        <div class="card-body p-6 space-y-2 font-bold bg-base-100 w-auto h-28 border-2 border-gray-200 rounded-xl">
+        <div class="card-body p-6 space-y-2 font-bold bg-base-100 w-auto md:h-28 h-40 mx-5 md:mx-0 text-sm md:text-base border-2 border-gray-200 rounded-xl">
         <p class="text-black">${addMoney} Taka is ${historyContainer} </p>
         <p class="text-gray-bg">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()} GMT +0600 (Bangladesh Standard Time)</p>
         </div>
