@@ -1,29 +1,30 @@
-document.getElementById('btn-add-money')
+document.getElementById('btn-add-money2')
     .addEventListener('click', function (event) {
         event.preventDefault();
 
-        const addMoney = getInputFieldValueById('input-add-money');
+        const addMoney = getInputFieldValueById('input-add-money2');
 
         if (addMoney <= 0 || isNaN(addMoney)) {
-            document.getElementById('my_modal_1').classList.add('hidden');
+            document.getElementById('my_modal_2').classList.add('hidden');
             alert('Invalid Donation Amount!');
             return
         }
 
         const mainBalance = getTextFieldValueById('input-cash-out');
         if (addMoney > mainBalance) {
-            document.getElementById('my_modal_1').classList.add('hidden');
+            document.getElementById('my_modal_2').classList.add('hidden');
             alert('You do not have enough money to donate');
             return;
         }
 
-        const balance = getTextFieldValueById('account-balance');
+        const balance = getTextFieldValueById('account-balance2');
         const newBalance = balance + addMoney;
 
-        document.getElementById('account-balance').innerText = newBalance;
+        document.getElementById('account-balance2').innerText = newBalance;
+
 
         // transaction history 
-        const historyContainer = document.getElementById('history-title').innerText;
+        const historyContainer = document.getElementById('history-title2').innerText;
         const div = document.createElement('div');
         div.classList.add();
         div.innerHTML = `
@@ -38,19 +39,19 @@ document.getElementById('btn-add-money')
 
     })
 
-    document.getElementById('btn-add-money').addEventListener('click', function(event){
+    document.getElementById('btn-add-money2').addEventListener('click', function(event){
         event.preventDefault();
     
-        const cashOut = getInputFieldValueById('input-add-money');
+        const cashOut = getInputFieldValueById('input-add-money2');
         if(cashOut <= 0){
-            document.getElementById('my_modal_1').classList.add('hidden');
+            document.getElementById('my_modal_2').classList.add('hidden');
             return;
             
         }
         
         const mainBalance = getTextFieldValueById('input-cash-out');
         if(cashOut > mainBalance){
-            document.getElementById('my_modal_1').classList.add('hidden');
+            document.getElementById('my_modal_2').classList.add('hidden');
             return;
         }
         

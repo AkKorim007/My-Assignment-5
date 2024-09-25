@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog || Donate Bangladesh</title>
+    <!-- daisyui - tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Lexend font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-bg': 'rgb(171, 239, 95)',
+                        'nav-bg': 'rgb(249, 247, 243)',
+                        'gray-bg': 'rgba(17, 17, 17, 0.7)',
+
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+    <header class="sticky top-0 z-50">
+        <nav
+            class="flex justify-between md:justify-around backdrop-blur bg-nav-bg font-bold text-xl pt-5 pb-10 px-5 md:px-0">
+            <div>
+                <button class="btn px-8 text-xl text-black font-bold bg-btn-bg"><a href="index.html">Home</a></button>
+            </div>
+
+            <div class="hidden md:flex md:gap-5">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-black pt-2.5">Donate Bangladesh</h1>
+            </div>
+
+            <div class="flex space-x-2">
+                <img class="py-2" src="assets/coin.png" alt="">
+                <h1 id="input-cash-out" class="text-gray-bg pt-2.5">10000</h1>
+                <p class="text-gray-bg pt-2.5">BDT</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="min-h-screen md:mx-auto max-w-6xl py-10 text-black mx-5">
+            <div class="flex pb-10">
+                <h1 class="text-4xl font-bold">Important FAQ</h1>
+                <img class="w16 h-16 -mt-3.5" src="assets/question-mark-bubble.jpg" alt="">
+            </div>
+
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border space-y-5">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+                    </div>
+                </div>
+
+                <div class="collapse collapse-arrow join-item border-base-300 border space-y-5">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM</div>
+                    <div class="collapse-content">
+                        <p>To select an element from the DOM in JavaScript, you can use several methods provided by the document object. Below are the most common ways to select elements in the DOM: <br><br>
+                            
+                            <span class="font-bold">1. getElementById("id"):</span> Selects by id (returns one element).<br>
+                            <span class="font-bold">2. getElementsByClassName("className"):</span> Selects by class name (returns a collection).<br>
+                            <span class="font-bold">3. getElementsByTagName("tagName"):</span> Selects by tag name (returns a collection).<br>
+                            <span class="font-bold">4. querySelector("selector"):</span> Selects the first match of a CSS selector (returns one element).<br>
+                            <span class="font-bold">5. querySelectorAll("selector"):</span> Selects all matches of a CSS selector (returns a collection).</p>
+                    </div>
+                </div>
+
+                <div class="collapse collapse-arrow join-item border-base-300 border space-y-5">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.</p>
+                    </div>
+                </div>
+
+                <div class="collapse collapse-arrow join-item border-base-300 border space-y-5">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p>Manipulating Element Attributes<br>
+                            The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. <br><br>
+                            Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method is used to change the input element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

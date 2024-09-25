@@ -1,15 +1,30 @@
-function toggleBtn(Id){
-    const btnOne = document.getElementById('show-donation-page');
-    const btnTwo = document.getElementById('show-history-page');
-    
-    btnOne.classList.remove('bg-btn-bg');
-    btnOne.classList.add('bg-white');
+const historyTab = document.getElementById("show-history-page");
+const donationTab = document.getElementById("show-donation-page");
+historyTab.addEventListener('click', function(){
+    historyTab.classList.add(
+        "bg-btn-bg", 
+        "text-black"
+    );
+    historyTab.classList.remove("text-gray-bg");
+    donationTab.classList.remove(
+        "bg-btn-bg", 
+        "text-black"
+    );
+    donationTab.classList.add("text-gray-bg");
 
-    btnTwo.classList.remove('bg-btn-bg');
-    btnTwo.classList.add('bg-white');
-   
+});
 
-    const clickedButton = document.getElementById(Id)
-    clickedButton.classList.remove('bg-white');
-    clickedButton.classList.add('bg-btn-bg');
-}
+donationTab.addEventListener('click', function(){
+    donationTab.classList.add(
+        "bg-btn-bg", 
+        "text-black"
+    );
+    donationTab.classList.remove("text-gray-bg");
+    historyTab.classList.remove(
+        "bg-btn-bg", 
+        "text-black"
+    );
+    historyTab.classList.add("text-gray-bg");
+
+});
+
